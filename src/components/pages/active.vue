@@ -3,7 +3,9 @@ import left from "../modules/active/left.vue";
 import right from "../modules/active/right.vue";
 
 const jan = ["coming soon...coming soon...coming soon...", "coming soon...", "coming soon...", "coming soon..."];
+const jan_imgs = ["./assets/icon/icon_def.png", "./assets/icon/icon_def.png", "./assets/icon/icon_def.png"];
 const feb = ["coming soon...", "coming soon...", "coming soon..."];
+const feb_imgs = ["./assets/icon/icon_def.png", "./assets/icon/icon_def.png", "./assets/icon/icon_def.png"];
 const mar = ["coming soon...", "coming soon...", "coming soon..."];
 const apr = ["coming soon...", "coming soon...", "coming soon..."];
 const may = ["coming soon...", "coming soon...", "coming soon..."];
@@ -24,8 +26,8 @@ const dec = ["coming soon...", "coming soon...", "coming soon..."];
       </div>
       <div class="place-self-center mt-10">
         <div class="p-2 mx-auto flex flex-col md:grid grid-cols-9">
-          <left month="January" :contents="jan" />
-          <right month="February" :contents="feb" />
+          <left month="January" :contents="jan" :imgs="jan_imgs" />
+          <right month="February" :contents="feb" :imgs="feb_imgs" />
           <left month="March" :contents="mar" />
           <right month="April" :contents="apr" />
           <left month="May" :contents="may" />
